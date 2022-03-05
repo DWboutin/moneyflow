@@ -3,7 +3,7 @@ export const colors = {
   black: "#351F39",
   gold: "#BDA472",
   greyLight: "#FCFBFB",
-  grey: "#D8D7D7",
+  grey: "#BFBFBF",
   greyDark: "#817C82",
 };
 
@@ -47,6 +47,19 @@ export interface Theme {
     bg: string;
     boxShadow: string;
   };
+  input: {
+    label: string;
+    text: string;
+    placeholder: string;
+    normal: {
+      border: string;
+      bg: string;
+    };
+    focus: {
+      border: string;
+      bg: string;
+    };
+  };
 }
 
 export const theme: Theme = {
@@ -85,5 +98,18 @@ export const theme: Theme = {
   card: {
     bg: colors.white,
     boxShadow: "0px 20px 50px -10px rgba(0, 0, 0, 0.25);",
+  },
+  input: {
+    label: colors.black,
+    text: colors.black,
+    placeholder: colors.grey,
+    normal: {
+      border: colors.grey,
+      bg: colors.greyLight,
+    },
+    focus: {
+      border: colors.gold,
+      bg: colors.greyLight,
+    },
   },
 };
