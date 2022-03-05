@@ -12,7 +12,7 @@ interface Props {
 const Index: React.FunctionComponent<Props> = ({ children }) => {
   return (
     <Container>
-      <h1>Dashboard</h1>
+      <h1>Tracking Expenses</h1>
     </Container>
   );
 };
