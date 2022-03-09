@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+import "react-datepicker/dist/react-datepicker.css";
+
 import { ThemeContainer } from "./styles";
 import { baseFontSize, fontFamily } from "./typography";
 

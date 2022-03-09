@@ -14,8 +14,8 @@ export const Container = styled.div<ContainerProps>`
   }
 `;
 
-const Input = styled.input`
-  height: 40px;
+const TextareaField = styled.textarea`
+  min-height: 80px;
   padding: 10px 20px 9px 20px;
   border-radius: 0px 20px 20px 20px;
   color: ${({ theme }: ThemeContainer) => theme.input.text};
@@ -43,11 +43,11 @@ interface Props {
   label: string;
   placeholder: string;
   value: string | number;
-  handleOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleOnChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   error?: string | boolean;
 }
 
-const TextInput: React.VoidFunctionComponent<Props> = ({
+const Textarea: React.VoidFunctionComponent<Props> = ({
   id,
   name,
   label,
@@ -59,17 +59,17 @@ const TextInput: React.VoidFunctionComponent<Props> = ({
   return (
     <Container>
       <label htmlFor={id}>{label}</label>
-      <Input
-        type="text"
+      <TextareaField
         id={id}
         name={name}
         placeholder={placeholder}
         value={value}
         onChange={handleOnChange}
+        rows={3}
       />
       {error && <Error>{error}</Error>}
     </Container>
   );
 };
 
-export default TextInput;
+export default Textarea;

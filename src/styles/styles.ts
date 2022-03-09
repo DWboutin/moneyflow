@@ -1,10 +1,13 @@
 export const colors = {
   white: "#ffffff",
   black: "#351F39",
+  goldLight: "#DCBF86",
   gold: "#BDA472",
+  goldDark: "#988051",
   greyLight: "#FCFBFB",
   grey: "#BFBFBF",
   greyDark: "#817C82",
+  red: "#ED5717",
 };
 
 export interface ThemeContainer {
@@ -59,6 +62,28 @@ export interface Theme {
       border: string;
       bg: string;
     };
+    error: string;
+  };
+  datepicker: {
+    header: {
+      text: string;
+      bg: string;
+    };
+    selectedDay: string;
+  };
+  button: {
+    normal: {
+      text: string;
+      bg: string;
+    };
+    hover: {
+      text: string;
+      bg: string;
+    };
+    active: {
+      text: string;
+      bg: string;
+    };
   };
 }
 
@@ -110,6 +135,28 @@ export const theme: Theme = {
     focus: {
       border: colors.gold,
       bg: colors.greyLight,
+    },
+    error: colors.red,
+  },
+  datepicker: {
+    header: {
+      text: colors.white,
+      bg: colors.black,
+    },
+    selectedDay: colors.gold,
+  },
+  button: {
+    normal: {
+      text: colors.white,
+      bg: colors.gold,
+    },
+    hover: {
+      text: colors.white,
+      bg: colors.goldLight,
+    },
+    active: {
+      text: colors.white,
+      bg: colors.goldDark,
     },
   },
 };

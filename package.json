@@ -16,9 +16,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.0",
     "babel-plugin-styled-components": "^2.0.6",
     "boxicons": "^2.1.1",
     "classnames": "^2.3.1",
+    "formik": "^2.2.9",
     "gatsby": "^4.9.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^4.9.0",
@@ -26,13 +28,17 @@
     "gatsby-plugin-styled-components": "^5.9.0",
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",
+    "react-datepicker": "^4.7.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "styled-components": "^5.3.3"
+    "react-redux": "^7.2.6",
+    "styled-components": "^5.3.3",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "^17.0.14",
     "@types/react": "^17.0.38",
+    "@types/react-datepicker": "^4.3.4",
     "@types/react-dom": "^17.0.11",
     "@types/styled-components": "^5.1.24",
     "typescript": "^4.5.5"

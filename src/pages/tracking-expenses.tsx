@@ -9,7 +9,7 @@ interface Props {
   children: ReactNode;
 }
 
-const Index: React.FunctionComponent<Props> = ({ children }) => {
+const TrackingExpenses: React.FunctionComponent<Props> = ({ children }) => {
   return (
     <Container>
       <h1>Tracking Expenses</h1>
@@ -17,4 +17,4 @@ const Index: React.FunctionComponent<Props> = ({ children }) => {
   );
 };
 
-export default Index;
+export default TrackingExpenses;

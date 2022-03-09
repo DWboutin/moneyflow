@@ -4,6 +4,7 @@ import Card from "../components/Card/Card";
 import TextInput, {
   Container as TextInputContainer,
 } from "../components/TextInput/TextInput";
+import PaymentForm from "../features/payments/components/PaymentForm";
 import { ThemeContainer } from "../styles/styles";
 
 interface ContainerProps {}
@@ -28,34 +29,15 @@ interface Props {
   children: ReactNode;
 }
 
-const Index: React.FunctionComponent<Props> = ({ children }) => {
+const RecordPayment: React.FunctionComponent<Props> = ({ children }) => {
   return (
     <Container>
       <h1>Record Payment</h1>
       <Card>
-        <FormRow>
-          <TextInput
-            id="sender"
-            name="sender"
-            label="Sender name"
-            placeholder="Mikael Boutin"
-          />
-          <TextInput
-            id="amount"
-            name="amount"
-            label="Amount Received"
-            placeholder="123,456.78"
-          />
-          <TextInput
-            id="date"
-            name="date"
-            label="Date of the payment"
-            placeholder="March 5th 2022"
-          />
-        </FormRow>
+        <PaymentForm />
       </Card>
     </Container>
   );
 };
 
-export default Index;
+export default RecordPayment;
