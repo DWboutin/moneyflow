@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import payments from "../features/payments/store/paymentsSlice";
+import expenses from "../features/expenses/store/expensesSlice";
 
 const store = configureStore({
   reducer: {
     payments,
+    expenses,
   },
 });
 

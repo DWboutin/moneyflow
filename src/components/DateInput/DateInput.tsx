@@ -85,7 +85,6 @@ interface Props {
   name: string;
   label: string;
   placeholder: string;
-  value: string | number;
   handleOnChange: (date: Date | null) => void;
   error?: string | boolean;
 }
@@ -95,7 +94,6 @@ const TextInput: React.VoidFunctionComponent<Props> = ({
   name,
   label,
   placeholder,
-  value,
   handleOnChange,
   error,
 }) => {

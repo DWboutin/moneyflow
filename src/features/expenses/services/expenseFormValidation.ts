@@ -4,10 +4,14 @@ const maxDate = new Date();
 maxDate.setHours(23, 59, 59, 999);
 
 const paymentFormValidation = Yup.object().shape({
-  sender: Yup.string()
-    .min(2, "Sender name is too short")
-    .max(255, "Sender name is too long")
-    .required("Sender name is required"),
+  payer: Yup.string()
+    .min(2, "Payer name is too short")
+    .max(255, "Payer name is too long")
+    .required("Payer name is required"),
+  paidEntity: Yup.string()
+    .min(2, "Paid entity name is too short")
+    .max(255, "Paid entity name is too long")
+    .required("Paid entity name is required"),
   amount: Yup.number()
     .moreThan(0, "Amount should be higher than 0")
     .required("Amount is required")

@@ -10,9 +10,9 @@ import TextInput, {
   Container as TextInputContainer,
 } from "../../../components/TextInput/TextInput";
 import { useAppDispatch } from "../../../store/hooks";
-import { Payment } from "../domain/Payment";
-import paymentFormValidation from "../services/paymentFormValidation";
-import { addPayment } from "../store/paymentsSlice";
+import { Expense } from "../domain/Expense";
+import expenseFormValidation from "../services/expenseFormValidation";
+import { addExpense } from "../store/expensesSlice";
 
 interface ContainerProps {}
 
@@ -39,7 +39,7 @@ const FormRowAlignRight = styled(FormRow)`
 
 interface Props {}
 
-const PaymentForm: React.VoidFunctionComponent<Props> = ({}) => {
+const ExpenseForm: React.VoidFunctionComponent<Props> = ({}) => {
   const dispatch = useAppDispatch();
   const {
     values,
@@ -49,18 +49,19 @@ const PaymentForm: React.VoidFunctionComponent<Props> = ({}) => {
     handleSubmit,
     setFieldValue,
     resetForm,
-  } = useFormik<Payment>({
+  } = useFormik<Expense>({
     initialValues: {
-      sender: "",
+      payer: "",
+      paidEntity: "",
       amount: 0,
       date: "",
       note: "",
     },
-    validationSchema: paymentFormValidation,
+    validationSchema: expenseFormValidation,
     onSubmit: (values) => {
-      dispatch(addPayment(values));
+      dispatch(addExpense(values));
       resetForm();
-      toast.success("Payment added");
+      toast.success("Expense added");
     },
   });
 
@@ -68,13 +69,22 @@ const PaymentForm: React.VoidFunctionComponent<Props> = ({}) => {
     <Container onSubmit={handleSubmit}>
       <FormRow>
         <TextInput
-          id="sender"
-          name="sender"
-          label="Sender name"
+          id="payer"
+          name="payer"
+          label="Payer"
           placeholder="Mikael Boutin"
-          value={values.sender}
+          value={values.payer}
           handleOnChange={handleChange}
-          error={touched.sender && errors.sender}
+          error={touched.payer && errors.payer}
+        />
+        <TextInput
+          id="paidEntity"
+          name="paidEntity"
+          label="Paid entity"
+          placeholder="Mikael Boutin"
+          value={values.paidEntity}
+          handleOnChange={handleChange}
+          error={touched.paidEntity && errors.paidEntity}
         />
         <TextInput
           id="amount"
@@ -108,10 +118,10 @@ const PaymentForm: React.VoidFunctionComponent<Props> = ({}) => {
         />
       </FormRow>
       <FormRowAlignRight>
-        <Button type="submit">Add payment</Button>
+        <Button type="submit">Add expense</Button>
       </FormRowAlignRight>
     </Container>
   );
 };
 
-export default PaymentForm;
+export default ExpenseForm;

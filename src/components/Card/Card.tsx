@@ -6,7 +6,6 @@ interface ContainerProps {}
 
 const Container = styled.div<ContainerProps>`
   display: flex;
-  flex: 1;
   padding: 40px;
   border-radius: 0px 40px 40px 40px;
   background-color: ${({ theme }: ThemeContainer) => theme.card.bg};
