@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextInput /> default rendering should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL kGCSBy"
+  >
+    <label
+      for="id"
+    >
+      Label
+    </label>
+    <input
+      class="sc-gsDKAQ QPTvR"
+      id="id"
+      name="name"
+      placeholder="Placeholder"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    class="Toastify"
+  />
+</div>
+`;
+
+exports[`<TextInput /> with error should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL kGCSBy"
+  >
+    <label
+      for="id"
+    >
+      Label
+    </label>
+    <input
+      class="sc-gsDKAQ QPTvR"
+      id="id"
+      name="name"
+      placeholder="Placeholder"
+      type="text"
+      value="Value"
+    />
+    <div
+      class="sc-dkPtRN AKYuc"
+    >
+      Has an error
+    </div>
+  </div>
+  <div
+    class="Toastify"
+  />
+</div>
+`;

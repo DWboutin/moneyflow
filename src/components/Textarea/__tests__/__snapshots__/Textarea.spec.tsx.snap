@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Textarea /> default rendering should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL kGCSBy"
+  >
+    <label
+      for="id"
+    >
+      Label
+    </label>
+    <textarea
+      class="sc-gsDKAQ jDCENO"
+      id="id"
+      name="name"
+      placeholder="Placeholder"
+      rows="3"
+    />
+  </div>
+  <div
+    class="Toastify"
+  />
+</div>
+`;
+
+exports[`<Textarea /> with error should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL kGCSBy"
+  >
+    <label
+      for="id"
+    >
+      Label
+    </label>
+    <textarea
+      class="sc-gsDKAQ jDCENO"
+      id="id"
+      name="name"
+      placeholder="Placeholder"
+      rows="3"
+    >
+      Value
+    </textarea>
+    <div
+      class="sc-dkPtRN AKYuc"
+    >
+      Has an error
+    </div>
+  </div>
+  <div
+    class="Toastify"
+  />
+</div>
+`;

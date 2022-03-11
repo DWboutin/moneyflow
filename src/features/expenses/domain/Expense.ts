@@ -2,6 +2,6 @@ export interface Expense {
   payer: string;
   paidEntity: string;
   amount: number;
-  date: string;
+  date: Date;
   note: string;
 }

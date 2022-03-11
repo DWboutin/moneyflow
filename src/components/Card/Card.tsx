@@ -12,7 +12,7 @@ const Container = styled.div<ContainerProps>`
   box-shadow: ${({ theme }: ThemeContainer) => theme.card.boxShadow};
 `;
 
-interface Props {
+export interface Props {
   children: ReactNode;
 }
 

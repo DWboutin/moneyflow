@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> default rendering should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL gUCkrw"
+  >
+    Content
+  </div>
+  <div
+    class="Toastify"
+  />
+</div>
+`;

@@ -1,10 +1,5 @@
-import {
-  fireEvent,
-  render,
-  RenderResult,
-  screen,
-} from "@testing-library/react";
-import TestWrapper from "../../../utils/TestWrapper";
+import React from "react";
+import { render, RenderResult } from "@testing-library/react";
 
 import BoxIcons, { Props } from "../BoxIcons";
 
@@ -26,22 +21,20 @@ describe("<BoxIcons />", () => {
     className,
   }: Props) => {
     renderResult = render(
-      <TestWrapper>
-        <BoxIcons
-          name={name}
-          type={type}
-          size={size}
-          rotate={rotate}
-          flip={flip}
-          fixedWidth={fixedWidth}
-          pull={pull}
-          bordered={bordered}
-          circle={circle}
-          animation={animation}
-          animationOnHover={animationOnHover}
-          className={className}
-        />
-      </TestWrapper>
+      <BoxIcons
+        name={name}
+        type={type}
+        size={size}
+        rotate={rotate}
+        flip={flip}
+        fixedWidth={fixedWidth}
+        pull={pull}
+        bordered={bordered}
+        circle={circle}
+        animation={animation}
+        animationOnHover={animationOnHover}
+        className={className}
+      />
     );
   };
 

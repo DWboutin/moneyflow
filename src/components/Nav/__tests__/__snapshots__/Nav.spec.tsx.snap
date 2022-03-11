@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Nav /> default rendering should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-gsDKAQ kGCKzU"
+  >
+    <div>
+      <div
+        class="sc-dkPtRN dTUoTS"
+      >
+        MoneyFlow
+      </div>
+      <div
+        class="sc-hKwDye cFKaep"
+      >
+        <div
+          class="sc-eCImPb dZgOzE"
+        />
+        <div
+          class="sc-jRQBWg ovfEn"
+        >
+          Welcome back
+        </div>
+        <div
+          class="sc-gKclnd eTIzFW"
+        >
+          Michael Gregson
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-iCfMLu drCLaC"
+    >
+      <div>
+        <a
+          class="sc-bdvvtL hEsoLv"
+          href="/"
+        >
+          <i
+            class="bx bxs-dashboard bx-sm"
+          />
+          <span>
+            Dashboard
+          </span>
+        </a>
+        <a
+          class="sc-bdvvtL hEsoLv"
+          href="/record-payment"
+        >
+          <i
+            class="bx bx-message-square-add bx-sm"
+          />
+          <span>
+            Record Payment
+          </span>
+        </a>
+        <a
+          class="sc-bdvvtL hEsoLv"
+          href="/tracking-expenses"
+        >
+          <i
+            class="bx bx-notepad bx-sm"
+          />
+          <span>
+            Tracking Expenses
+          </span>
+        </a>
+      </div>
+      <a
+        class="sc-bdvvtL hEsoLv"
+        href="/log-out"
+      >
+        <i
+          class="bx bx-log-out bx-sm"
+        />
+        <span>
+          Log out
+        </span>
+      </a>
+    </div>
+  </div>
+  <div
+    class="Toastify"
+  />
+</div>
+`;

@@ -89,7 +89,7 @@ const PaymentForm: React.VoidFunctionComponent<Props> = ({}) => {
           id="date"
           name="date"
           label="Date of the payment"
-          placeholder="March 5th 2022"
+          placeholder="03/01/2022"
           handleOnChange={(date: Date | null) => {
             setFieldValue("date", date);
           }}

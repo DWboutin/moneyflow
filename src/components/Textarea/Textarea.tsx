@@ -37,7 +37,7 @@ const Error = styled.div`
   color: ${({ theme }: ThemeContainer) => theme.input.error};
 `;
 
-interface Props {
+export interface Props {
   id: string;
   name: string;
   label: string;

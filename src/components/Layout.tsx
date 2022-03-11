@@ -25,7 +25,7 @@ const Content = styled.div<ContainerProps>`
   padding: 50px 80px;
 `;
 
-interface Props {
+export interface Props {
   children: ReactNode;
 }
 

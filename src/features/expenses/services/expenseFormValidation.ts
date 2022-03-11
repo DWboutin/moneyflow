@@ -18,9 +18,9 @@ const paymentFormValidation = Yup.object().shape({
     .test("is-decimal", "Invalid decimal", (value) => {
       return value?.toString()?.match(/^\d+(\.\d{2})?$/);
     }),
-  date: Yup.date()
-    .required("Date is required")
-    .max(maxDate.toUTCString(), "Impossible to add date farther than now"),
+  // date: Yup.date()
+  //   .required("Date is required")
+  //   .max(maxDate.toUTCString(), "Impossible to add date farther than now"),
   note: Yup.string(),
 });
 

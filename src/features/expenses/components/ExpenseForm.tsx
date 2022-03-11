@@ -37,9 +37,7 @@ const FormRowAlignRight = styled(FormRow)`
   justify-content: flex-end;
 `;
 
-interface Props {}
-
-const ExpenseForm: React.VoidFunctionComponent<Props> = ({}) => {
+const ExpenseForm: React.VoidFunctionComponent = () => {
   const dispatch = useAppDispatch();
   const {
     values,
@@ -54,7 +52,7 @@ const ExpenseForm: React.VoidFunctionComponent<Props> = ({}) => {
       payer: "",
       paidEntity: "",
       amount: 0,
-      date: "",
+      date: new Date(),
       note: "",
     },
     validationSchema: expenseFormValidation,
@@ -99,7 +97,7 @@ const ExpenseForm: React.VoidFunctionComponent<Props> = ({}) => {
           id="date"
           name="date"
           label="Date of the payment"
-          placeholder="March 5th 2022"
+          placeholder="03/01/2022"
           handleOnChange={(date: Date | null) => {
             setFieldValue("date", date);
           }}

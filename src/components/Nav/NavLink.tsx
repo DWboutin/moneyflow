@@ -71,7 +71,7 @@ const Container = styled(Link)`
   }
 `;
 
-interface Props {
+export interface Props {
   to: string;
   icon: string;
   iconType?: BoxiconTypes;

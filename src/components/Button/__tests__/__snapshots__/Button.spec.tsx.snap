@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> default rendering should match snapshot 1`] = `
+<div>
+  <button
+    class="sc-bdvvtL RYNZf"
+    role="button"
+    type="button"
+  >
+    Button label
+  </button>
+  <div
+    class="Toastify"
+  />
+</div>
+`;
+
+exports[`<Button /> type='submit' should match snapshot 1`] = `
+<div>
+  <button
+    class="sc-bdvvtL RYNZf"
+    role="button"
+    type="submit"
+  >
+    Button label
+  </button>
+  <div
+    class="Toastify"
+  />
+</div>
+`;

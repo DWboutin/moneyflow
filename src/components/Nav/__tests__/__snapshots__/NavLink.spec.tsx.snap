@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavLink /> default rendering should match snapshot 1`] = `
+<div>
+  <a
+    class="sc-bdvvtL hEsoLv"
+    href="/"
+  >
+    <i
+      class="bx bxs-dashboard bx-sm"
+    />
+    <span>
+      Link
+    </span>
+  </a>
+  <div
+    class="Toastify"
+  />
+</div>
+`;

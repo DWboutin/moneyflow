@@ -23,7 +23,7 @@ const Container = styled.button`
 
 export type ButtonTypes = "submit" | "button";
 
-interface Props {
+export interface Props {
   children: ReactNode;
   type?: ButtonTypes;
 }
@@ -33,7 +33,7 @@ const Button: React.FunctionComponent<Props> = ({
   type = "button",
 }) => {
   return (
-    <Container type={type} role="button">
+    <Container type={type} role="button" onClick={() => console.log("hello")}>
       {children}
     </Container>
   );
